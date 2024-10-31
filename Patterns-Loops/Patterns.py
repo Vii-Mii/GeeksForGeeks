@@ -1,3 +1,6 @@
+from lib2to3.pytree import LeafPattern
+
+
 def pattern1(n):
     for i in range(n):
         for j in range(n):
@@ -28,6 +31,12 @@ def pattern5(n):
             print("*", end=" ")
         print()
 
-pattern5(3)
+def pattern6(n):
+    for i in range(n):
+        for j in range(1,n-i+1):
+            print(j,end=" ")
+        print()
+
+pattern6(3)
 print()
-pattern5(5)
+pattern6(5)
