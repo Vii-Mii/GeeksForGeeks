@@ -65,6 +65,17 @@ def pattern9(n):
     pattern7(n)
     pattern8(n)
 
-pattern9(3)
+def pattern10(n):
+    stars = 0
+    for i in range(n*2):
+        if i > n-1:
+            stars -= 1
+        for j in range(stars+1):
+            print("*",end="")
+        if i < n-1:
+            stars += 1
+        print()
+
+pattern10(3)
 print()
-pattern9(5)
+pattern10(5)
