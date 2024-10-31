@@ -37,6 +37,18 @@ def pattern6(n):
             print(j,end=" ")
         print()
 
-pattern6(3)
+def pattern7(n):
+    for i in range(n):
+        for j in range(n-i-1):
+            print(" ",end=" ")
+
+        for j in range(2*i+1):
+            print("*",end=" ")
+
+        for j in range(n-i-1):
+            print(" ",end=" ")
+        print()
+
+pattern7(3)
 print()
-pattern6(5)
+pattern7(5)
