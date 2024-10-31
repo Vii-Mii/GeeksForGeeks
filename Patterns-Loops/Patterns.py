@@ -76,6 +76,17 @@ def pattern10(n):
             stars += 1
         print()
 
-pattern10(3)
+def pattern11(n):
+    for i in range(n):
+        if i % 2 == 0:
+            val = 1
+        else:
+            val = 0
+        for j in range(i + 1):
+            print(val, end=" ")
+            val = 1 - val
+        print()
+
+pattern11(3)
 print()
-pattern10(5)
+pattern11(5)
