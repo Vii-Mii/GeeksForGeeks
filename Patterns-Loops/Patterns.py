@@ -22,6 +22,12 @@ def pattern4(n):
             print(i, end=" ")
         print()
 
-pattern4(3)
+def pattern5(n):
+    for i in range(n):
+        for j in range(n - i):
+            print("*", end=" ")
+        print()
+
+pattern5(3)
 print()
-pattern4(5)
+pattern5(5)
