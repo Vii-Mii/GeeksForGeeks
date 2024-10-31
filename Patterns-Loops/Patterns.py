@@ -61,6 +61,10 @@ def pattern8(n):
             print(" ", end=" ")
         print()
 
-pattern8(3)
+def pattern9(n):
+    pattern7(n)
+    pattern8(n)
+
+pattern9(3)
 print()
-pattern8(5)
+pattern9(5)
