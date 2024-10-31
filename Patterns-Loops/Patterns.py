@@ -114,6 +114,13 @@ def pattern14(n):
             print(chr(val + j), end=" ")
         print()
 
-pattern14(3)
+def pattern15(n):
+    val = 65
+    for i in range(n):
+        for j in range(n - i):
+            print(chr(val + j), end=" ")
+        print()
+
+pattern15(3)
 print()
-pattern14(5)
+pattern15(5)
