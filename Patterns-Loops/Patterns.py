@@ -99,6 +99,14 @@ def pattern12(n):
             print(j, end=" ")
         print()
 
-pattern12(3)
+def pattern13(n):
+    val = 1
+    for i in range(n):
+        for j in range(i + 1):
+            print(val, end=" ")
+            val += 1
+        print()
+
+pattern13(3)
 print()
-pattern12(5)
+pattern13(5)
