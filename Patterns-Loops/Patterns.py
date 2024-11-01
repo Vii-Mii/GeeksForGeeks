@@ -209,6 +209,12 @@ def pattern21(n):
                 print(" ",end=" ")
         print()
 
-pattern21(4)
-print()
-pattern21(5)
+def pattern22(n):
+    for i in range(2*n-1):
+        for j in range(2*n-1):
+            top = i
+            right = j
+            left  = (2*n-2)-j
+            bottom = (2*n-2)-i
+            print(n - min(min(top,bottom),min(left,right)),end=" ")
+        print()
