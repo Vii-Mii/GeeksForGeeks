@@ -200,6 +200,15 @@ def pattern20(n):
             print("*", end=" ")
         print()
 
-pattern20(3)
+def pattern21(n):
+    for i in range(n):
+        for j in range(n):
+            if i == 0 or i == n - 1 or j == 0 or j == n - 1:
+                print("*", end=" ")
+            else:
+                print(" ",end=" ")
+        print()
+
+pattern21(4)
 print()
-pattern20(5)
+pattern21(5)
