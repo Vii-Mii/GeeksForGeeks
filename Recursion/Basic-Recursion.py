@@ -10,5 +10,11 @@ def func():
     cnt += 1
     func()
 
+# Infinite Recursion
+def printing():
+    print("Calling function")
+    printing()
+
 if __name__ == '__main__':
     func()
+    printing()
