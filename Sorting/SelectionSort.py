@@ -11,6 +11,17 @@ def selection_sort(arr,n):
      return arr
 
 
+# practice
+def selection_sortt(arr,n):
+    for i in range(n-1):
+        mini = i
+        for j in range(i+1,n):
+            if arr[j] < arr[mini]:
+                mini = j
+        arr[mini],arr[i] = arr[i],arr[mini]
+
+    return arr
+
 if __name__ == '__main__':
     arr = [47,2,1,3,443,5]
     selection_sort(arr,len(arr))
